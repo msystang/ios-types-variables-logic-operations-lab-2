@@ -21,6 +21,19 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var myGrade: Double = 10.0
+
+var classAverage = (grade1 + grade2 + grade3 + myGrade)/4
+
+if myGrade > classAverage {
+print("above average")
+} else {
+print("below average")
+}
 ```
 
 ***
@@ -32,6 +45,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+let number = 2
+
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
 ```
 
 ***
@@ -44,6 +64,14 @@ var a = 12
 var b = 3
 
 // code here
+var a = 12
+var b = 3
+
+if a%b == 0 {
+print("divisible")
+} else {
+print("not divisible")
+}
 ```
 
 ***
@@ -57,6 +85,15 @@ var b = 3
 var c = 2
 
 // your code here
+var a = 2
+var b = 3
+var c = 2
+
+if a == b || a == c || b == c {
+print("At least two variables have the same value")
+} else {
+print("All the values are different")
+}
 ```
 
 ***
@@ -69,6 +106,20 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+var baconAge = 6 // the bacon is 6 days old, spoils after 7 days
+var eggsAge = 12 // eggs are 12 days old, spoils after 21 days
+var baconExpDays = 7
+var eggsExpDays = 21
+
+if baconAge <= 7 && eggsAge <= 21 {
+print("you can cook bacon and eggs")
+}
+if baconAge > baconExpDays {
+print("throw out bacon")
+}
+if eggsAge > eggsExpDays {
+print("throw out eggs")
+}
 ```
 
 ***
@@ -81,6 +132,20 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+let year = 2014
+// True if % 400
+// False if % 100
+// True if % 4
+
+if year % 400 == 0 {
+print("Leap year!")
+} else if year % 100 == 0 {
+print("Not a leap year!")
+} else if year % 4 == 0 {
+print("Leap year!")
+} else {
+print("Not a leap year!")
+}
 ```
 
 ***
@@ -92,6 +157,16 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+let randomNum = Int.random(in:0...100)
+var heads = 51...100
+
+switch randomNum {
+case heads:
+print("heads")
+default:
+print("tails")
+}
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -108,6 +183,13 @@ var c = 3
 var d = 4
 
 // your code here
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+let smallest = min(a,b,c,d)
+print(smallest)
 ```
 
 ***
